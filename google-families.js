@@ -1,7 +1,7 @@
 (function($){
 
 	// API URL with my own key. Please get your own if you want to use it.
-	var api = 'https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyBUK3PeqSEzwPNIyg94dBQpziFOPvm7-aA&sort=style';
+	var api = 'https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyDt5F-_-m5Sjr6SbWB75dQE_kiJUGHVBjQ&sort=style';
 	// Will hold the font data returned by the API for future filtering operations
 	var fontData;
 	// Cached reference
