@@ -70,9 +70,9 @@
 		var items = _.filter(data.items, function(item){
 			return item.variants.length >= minVariants && manualExcludes.indexOf(item.family) == -1;
 		});
-		// filter for families with at least one roman, one bold, and one italic
+		// filter for families with at least one roman, one bold, and one medium-weight italic, that are not categorised as ‘display’
 		items = _.filter(items, function(item){
-			return (_.contains(item.variants, '300') || _.contains(item.variants, 'regular') || _.contains(item.variants, '500')) && (_.contains(item.variants, '300italic') || _.contains(item.variants, 'italic') || _.contains(item.variants, '500italic')) && (_.contains(item.variants, '700') || _.contains(item.variants, '800') || _.contains(item.variants, '800'));
+			return (_.contains(item.variants, '300') || _.contains(item.variants, 'regular') || _.contains(item.variants, '500')) && (_.contains(item.variants, '300italic') || _.contains(item.variants, 'italic') || _.contains(item.variants, '500italic')) && (_.contains(item.variants, '700') || _.contains(item.variants, '800') || _.contains(item.variants, '800')) && item.category !== "display";
 		});
 
 		fontData = items;
