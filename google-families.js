@@ -81,6 +81,9 @@
 			items = _.filter(items, function(item){
 				return item.category == fontcategory;
 			});
+			document.getElementById(fontcategory).className = "current";
+		} else {
+			document.getElementById("all").className = "current";
 		}
 
 		fontData = items;
