@@ -19,7 +19,7 @@ header, footer {
 	background-image:-webkit-linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,0));
 	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.1)), to(rgba(255,255,255,0)));
 	background-image:linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,0));
-	
+
 }
 footer {
 	margin:2em -2em 0;
