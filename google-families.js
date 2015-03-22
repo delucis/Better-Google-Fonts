@@ -75,6 +75,14 @@
 			return (_.contains(item.variants, '300') || _.contains(item.variants, 'regular') || _.contains(item.variants, '500')) && (_.contains(item.variants, '300italic') || _.contains(item.variants, 'italic') || _.contains(item.variants, '500italic')) && (_.contains(item.variants, '700') || _.contains(item.variants, '800') || _.contains(item.variants, '800')) && item.category !== "display" && item.category !== "handwriting";
 		});
 
+		// if there is a cat query variable, display only matching fonts
+		if(getQueryVariable("cat")) {
+			var fontcategory = getQueryVariable("cat");
+			items = _.filter(items, function(item){
+				return item.category == fontcategory;
+			});
+		}
+
 		fontData = items;
 		fonts.reset(items);
 		fontsView.render();
