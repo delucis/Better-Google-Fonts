@@ -5,14 +5,16 @@
 <title>Better Google Web Fonts</title>
 <link rel="stylesheet" media="screen" href="google-families.css" />
 
-<script> var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-518812-8"]);_gaq.push(["_trackPageview"]);(function(A){var C=A.createElement("script");C.async=true;C.src=("https:"==A.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var B=A.getElementsByTagName("script")[0];B.parentNode.insertBefore(C,B);})(document); </script>
+
 </head>
 
 <body>
 <header>
 	<h1>Google Web Fonts Families</h1>
-	<h2>Because web designers want font families, not just fonts.</h2>
-	<div id="filters"></div>
+	<h2>Only shows families with at least one roman, one bold, and one italic variant. Excludes display and handwritten fonts.</h2>
+	<div id="filters">
+		<p>Show only: <a id="serif" href="?cat=serif">Serif</a> | <a id="sans-serif" href="?cat=sans-serif">Sans-serif</a> | <a id="monospace" href="?cat=monospace">Monospace</a> | <a id="all" href="?">All</a></p>
+	</div>
 </header>
 
 <div id="fonts"></div>
@@ -30,7 +32,7 @@
 
 </script>
 
-<footer>Another type-related service brought to you by <a href="http://somadesign.ca/">Soma Design</a>. <a href="http://somadesign.ca/2011/better-google-fonts/">Read the blog post</a> or <a href="https://github.com/mattwiebe/Better-Google-Fonts">fork the code</a>.</footer>
+<footer>Another type-related service brought to you by <a href="http://somadesign.ca/">Soma Design</a>. <a href="http://somadesign.ca/2011/better-google-fonts/">Read the blog post</a> or <a href="https://github.com/mattwiebe/Better-Google-Fonts">fork the code</a>.<br /><a href= "https://github.com/delucis/Better-Google-Fonts">This fork</a>, is a pickier version by <a href="http://www.chrisswithinbank.net/">Chris Swithinbank</a> aimed at filtering for appropriate body fonts.</footer>
 <script src="jquery-1.8.3.min.js"></script>
 <script src="app.js"></script>
 </body>
