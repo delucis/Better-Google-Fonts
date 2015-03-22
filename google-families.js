@@ -70,6 +70,10 @@
 		var items = _.filter(data.items, function(item){
 			return item.variants.length >= minVariants && manualExcludes.indexOf(item.family) == -1;
 		});
+		// filter out families that include no (non-italic) bold weights
+		items = _.filter(items, function(item){
+			return _.contains(item.variants, '700') || _.contains(item.variants, '800') || _.contains(item.variants, '800');
+		});
 		fontData = items;
 		fonts.reset(items);
 		fontsView.render();
