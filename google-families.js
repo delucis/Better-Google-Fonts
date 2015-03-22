@@ -78,6 +78,10 @@
 		items = _.filter(items, function(item){
 			return _.contains(item.variants, '300') || _.contains(item.variants, 'regular') || _.contains(item.variants, '500');
 		});
+		// filter out families that include no regular-weight italics
+		items = _.filter(items, function(item){
+			return _.contains(item.variants, '300italic') || _.contains(item.variants, 'italic') || _.contains(item.variants, '500italic');
+		});
 
 		fontData = items;
 		fonts.reset(items);
