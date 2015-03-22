@@ -74,6 +74,11 @@
 		items = _.filter(items, function(item){
 			return _.contains(item.variants, '700') || _.contains(item.variants, '800') || _.contains(item.variants, '800');
 		});
+		// filter out families that include no regular-weight Roman
+		items = _.filter(items, function(item){
+			return _.contains(item.variants, '300') || _.contains(item.variants, 'regular') || _.contains(item.variants, '500');
+		});
+
 		fontData = items;
 		fonts.reset(items);
 		fontsView.render();
