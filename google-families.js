@@ -7,7 +7,7 @@
 	// Cached reference
 	var head = $("head");
 	// Minimum font variants to show a font
-	var minVariants = 4;
+	var minVariants = 3;
 	// Template for a single font
 	var template = _.template($("#font-template").html());
 	// Manually exclude these stupid fonts
