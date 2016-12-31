@@ -14,7 +14,7 @@
 	var manualExcludes = ['Averia Libre', 'Averia Sans Libre', 'Averia Serif Libre'];
 
 	var Font = Backbone.Model.extend({
-		extUrlRoot: 'http://www.google.com/webfonts/specimen/',
+		extUrlRoot: 'https://fonts.google.com/specimen/',
 		// normalize our font data a bit
 		getFontData: function() {
 			var fontData = this.toJSON();
